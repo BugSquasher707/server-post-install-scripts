@@ -1,0 +1,8 @@
+# Server Monitoring
+0 * * * * cd /root/server-monitor && /usr/local/bin/npm start >> /root/server.log
+
+# Disk Usage Cleanup
+*/30 * * * * /root/disk_usage_cleanup.sh
+
+# Cache Cleanup for Images Older Than 24 Hours
+0 0 * * * /root/cleanup_past_24_cached_images_script.sh
